@@ -24,8 +24,6 @@ const config = {
   password: args.password,
 };
 
-console.log(config);
-
 /** @type {import("rollup").RollupOptions} */
 export default {
   input: "./index.js",
@@ -34,9 +32,6 @@ export default {
     format: "cjs",
     sourcemap: true,
   },
-  // watch: {
-  //   clearScreen: false
-  // },
   plugins: [
     clear({ target: ["dist"] }),
     resolve(),
