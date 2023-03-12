@@ -91,7 +91,7 @@ const errorMapper = function (next) {
             )}`
           : `${_.escape(sourceMappedStackTrace(e))}`;
 
-        console.log(`<text style="color:#ef9a9a">${errorMessage}</text>`);
+        console.log(`<text style="color:#ff4d4f">${errorMessage}</text>`);
       }
       // 处理不了，直接抛出
       else throw e;
